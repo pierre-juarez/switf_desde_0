@@ -9,5 +9,6 @@
         <page name='06_dictionaries'/>
         <page name='07_bucles'/>
         <page name='08_optionals'/>
+        <page name='09_functions'/>
     </pages>
 </playground>

@@ -4,5 +4,6 @@
         <page name='01_variables_and_constants'/>
         <page name='02_datatypes'/>
         <page name='03_conditionals'/>
+        <page name='04_switch'/>
     </pages>
 </playground>

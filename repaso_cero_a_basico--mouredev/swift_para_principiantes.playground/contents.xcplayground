@@ -10,5 +10,6 @@
         <page name='07_bucles'/>
         <page name='08_optionals'/>
         <page name='09_functions'/>
+        <page name='10_classes'/>
     </pages>
 </playground>

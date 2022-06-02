@@ -7,5 +7,6 @@
         <page name='04_switch'/>
         <page name='05_arrays'/>
         <page name='06_dictionaries'/>
+        <page name='07_bucles'/>
     </pages>
 </playground>

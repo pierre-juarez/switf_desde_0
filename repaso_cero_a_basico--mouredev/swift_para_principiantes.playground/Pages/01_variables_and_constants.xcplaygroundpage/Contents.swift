@@ -19,3 +19,6 @@ print(myFirstConstant)
 //Una constante no puede modificar su valor
 /* myFirstConstant = "Another constant"
 print(myFirstConstant) */
+
+let n : Int = nil
+print(n)

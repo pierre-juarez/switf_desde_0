@@ -11,7 +11,7 @@ import SwiftUI
 struct ViewApp: App {
     var body: some Scene {
         WindowGroup {
-            Buttons()
+            Images()
         }
     }
 }

@@ -12,6 +12,7 @@
 		2462EDE728501F7F00838CF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2462EDE628501F7F00838CF0 /* Assets.xcassets */; };
 		2462EDEA28501F7F00838CF0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2462EDE928501F7F00838CF0 /* Preview Assets.xcassets */; };
 		2462EDF12850204D00838CF0 /* TextMod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2462EDF02850204D00838CF0 /* TextMod.swift */; };
+		2462EDF3285023CC00838CF0 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2462EDF2285023CC00838CF0 /* Buttons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		2462EDE628501F7F00838CF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2462EDE928501F7F00838CF0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2462EDF02850204D00838CF0 /* TextMod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextMod.swift; sourceTree = "<group>"; };
+		2462EDF2285023CC00838CF0 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				2462EDE228501F7D00838CF0 /* ViewApp.swift */,
 				2462EDE428501F7D00838CF0 /* ContentView.swift */,
 				2462EDF02850204D00838CF0 /* TextMod.swift */,
+				2462EDF2285023CC00838CF0 /* Buttons.swift */,
 				2462EDE628501F7F00838CF0 /* Assets.xcassets */,
 				2462EDE828501F7F00838CF0 /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 				2462EDE528501F7D00838CF0 /* ContentView.swift in Sources */,
 				2462EDE328501F7D00838CF0 /* ViewApp.swift in Sources */,
 				2462EDF12850204D00838CF0 /* TextMod.swift in Sources */,
+				2462EDF3285023CC00838CF0 /* Buttons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

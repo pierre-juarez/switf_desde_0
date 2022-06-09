@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2447B02128526809001B1F17 /* ZStackPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2447B02028526809001B1F17 /* ZStackPadding.swift */; };
 		2462EDE328501F7D00838CF0 /* ViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2462EDE228501F7D00838CF0 /* ViewApp.swift */; };
 		2462EDE528501F7D00838CF0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2462EDE428501F7D00838CF0 /* ContentView.swift */; };
 		2462EDE728501F7F00838CF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2462EDE628501F7F00838CF0 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2447B02028526809001B1F17 /* ZStackPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStackPadding.swift; sourceTree = "<group>"; };
 		2462EDDF28501F7D00838CF0 /* View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = View.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2462EDE228501F7D00838CF0 /* ViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewApp.swift; sourceTree = "<group>"; };
 		2462EDE428501F7D00838CF0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				248F610F2851AA2A005AE0E9 /* HStackVStackSpacers.swift */,
 				2462EDE628501F7F00838CF0 /* Assets.xcassets */,
 				2462EDE828501F7F00838CF0 /* Preview Content */,
+				2447B02028526809001B1F17 /* ZStackPadding.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2447B02128526809001B1F17 /* ZStackPadding.swift in Sources */,
 				2462EDE528501F7D00838CF0 /* ContentView.swift in Sources */,
 				247B91BE2851854A00EEF188 /* Dividers.swift in Sources */,
 				2462EDE328501F7D00838CF0 /* ViewApp.swift in Sources */,

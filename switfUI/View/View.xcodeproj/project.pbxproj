@@ -68,11 +68,11 @@
 				2462EDF02850204D00838CF0 /* TextMod.swift */,
 				2462EDF2285023CC00838CF0 /* Buttons.swift */,
 				2462EDF428502AA200838CF0 /* Images.swift */,
-				2462EDE628501F7F00838CF0 /* Assets.xcassets */,
-				2462EDE828501F7F00838CF0 /* Preview Content */,
 				2462EDF62850317800838CF0 /* TextFields.swift */,
 				247B91BD2851854A00EEF188 /* Dividers.swift */,
 				248F610F2851AA2A005AE0E9 /* HStackVStackSpacers.swift */,
+				2462EDE628501F7F00838CF0 /* Assets.xcassets */,
+				2462EDE828501F7F00838CF0 /* Preview Content */,
 			);
 			path = View;
 			sourceTree = "<group>";

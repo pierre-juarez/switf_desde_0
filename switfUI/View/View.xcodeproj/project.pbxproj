@@ -20,6 +20,7 @@
 		248F61102851AA2A005AE0E9 /* HStackVStackSpacers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248F610F2851AA2A005AE0E9 /* HStackVStackSpacers.swift */; };
 		24ABE86F28528B8900F4CA6F /* TabViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABE86E28528B8900F4CA6F /* TabViews.swift */; };
 		24ABE87128528EFA00F4CA6F /* Navigations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABE87028528EFA00F4CA6F /* Navigations.swift */; };
+		24ABE87328529E1F00F4CA6F /* VideoPlayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABE87228529E1F00F4CA6F /* VideoPlayers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		248F610F2851AA2A005AE0E9 /* HStackVStackSpacers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStackVStackSpacers.swift; sourceTree = "<group>"; };
 		24ABE86E28528B8900F4CA6F /* TabViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViews.swift; sourceTree = "<group>"; };
 		24ABE87028528EFA00F4CA6F /* Navigations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigations.swift; sourceTree = "<group>"; };
+		24ABE87228529E1F00F4CA6F /* VideoPlayers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +55,6 @@
 		2462EDD628501F7D00838CF0 = {
 			isa = PBXGroup;
 			children = (
-				24ABE87028528EFA00F4CA6F /* Navigations.swift */,
 				2462EDE128501F7D00838CF0 /* View */,
 				2462EDE028501F7D00838CF0 /* Products */,
 			);
@@ -70,6 +71,8 @@
 		2462EDE128501F7D00838CF0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				24ABE87228529E1F00F4CA6F /* VideoPlayers.swift */,
+				24ABE87028528EFA00F4CA6F /* Navigations.swift */,
 				2462EDE228501F7D00838CF0 /* ViewApp.swift */,
 				2462EDE428501F7D00838CF0 /* ContentView.swift */,
 				2462EDF02850204D00838CF0 /* TextMod.swift */,
@@ -164,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24ABE87328529E1F00F4CA6F /* VideoPlayers.swift in Sources */,
 				2447B02128526809001B1F17 /* ZStackPadding.swift in Sources */,
 				2462EDE528501F7D00838CF0 /* ContentView.swift in Sources */,
 				247B91BE2851854A00EEF188 /* Dividers.swift in Sources */,

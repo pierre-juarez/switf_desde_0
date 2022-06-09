@@ -18,6 +18,7 @@
 		2462EDF72850317800838CF0 /* TextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2462EDF62850317800838CF0 /* TextFields.swift */; };
 		247B91BE2851854A00EEF188 /* Dividers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247B91BD2851854A00EEF188 /* Dividers.swift */; };
 		248F61102851AA2A005AE0E9 /* HStackVStackSpacers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248F610F2851AA2A005AE0E9 /* HStackVStackSpacers.swift */; };
+		24ABE86F28528B8900F4CA6F /* TabViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABE86E28528B8900F4CA6F /* TabViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		2462EDF62850317800838CF0 /* TextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFields.swift; sourceTree = "<group>"; };
 		247B91BD2851854A00EEF188 /* Dividers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dividers.swift; sourceTree = "<group>"; };
 		248F610F2851AA2A005AE0E9 /* HStackVStackSpacers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStackVStackSpacers.swift; sourceTree = "<group>"; };
+		24ABE86E28528B8900F4CA6F /* TabViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				247B91BD2851854A00EEF188 /* Dividers.swift */,
 				248F610F2851AA2A005AE0E9 /* HStackVStackSpacers.swift */,
 				2447B02028526809001B1F17 /* ZStackPadding.swift */,
+				24ABE86E28528B8900F4CA6F /* TabViews.swift */,
 				2462EDE628501F7F00838CF0 /* Assets.xcassets */,
 				2462EDE828501F7F00838CF0 /* Preview Content */,
 			);
@@ -164,6 +167,7 @@
 				2462EDE328501F7D00838CF0 /* ViewApp.swift in Sources */,
 				2462EDF528502AA200838CF0 /* Images.swift in Sources */,
 				2462EDF12850204D00838CF0 /* TextMod.swift in Sources */,
+				24ABE86F28528B8900F4CA6F /* TabViews.swift in Sources */,
 				2462EDF3285023CC00838CF0 /* Buttons.swift in Sources */,
 				2462EDF72850317800838CF0 /* TextFields.swift in Sources */,
 				248F61102851AA2A005AE0E9 /* HStackVStackSpacers.swift in Sources */,

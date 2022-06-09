@@ -15,6 +15,7 @@
 		2462EDF3285023CC00838CF0 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2462EDF2285023CC00838CF0 /* Buttons.swift */; };
 		2462EDF528502AA200838CF0 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2462EDF428502AA200838CF0 /* Images.swift */; };
 		2462EDF72850317800838CF0 /* TextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2462EDF62850317800838CF0 /* TextFields.swift */; };
+		247B91BE2851854A00EEF188 /* Dividers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247B91BD2851854A00EEF188 /* Dividers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		2462EDF2285023CC00838CF0 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		2462EDF428502AA200838CF0 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		2462EDF62850317800838CF0 /* TextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFields.swift; sourceTree = "<group>"; };
+		247B91BD2851854A00EEF188 /* Dividers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dividers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				2462EDE628501F7F00838CF0 /* Assets.xcassets */,
 				2462EDE828501F7F00838CF0 /* Preview Content */,
 				2462EDF62850317800838CF0 /* TextFields.swift */,
+				247B91BD2851854A00EEF188 /* Dividers.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2462EDE528501F7D00838CF0 /* ContentView.swift in Sources */,
+				247B91BE2851854A00EEF188 /* Dividers.swift in Sources */,
 				2462EDE328501F7D00838CF0 /* ViewApp.swift in Sources */,
 				2462EDF528502AA200838CF0 /* Images.swift in Sources */,
 				2462EDF12850204D00838CF0 /* TextMod.swift in Sources */,

@@ -11,6 +11,9 @@ struct ContentView: View {
     var body: some View {
       
       ZStack{
+        
+        Spacer()
+        
         Color("BackgroundColor")
           .ignoresSafeArea()
         
@@ -20,7 +23,7 @@ struct ContentView: View {
             .resizable()
             .aspectRatio(contentMode: .fit)
             .frame(width:187)
-            .padding(.bottom,60.0)
+            .padding(.bottom,50)
           
           LoginRegister()
          
@@ -32,24 +35,62 @@ struct ContentView: View {
 }
 
 struct LoginRegister: View{
+  @State var isViewLoginActive:Bool = true
   var body: some View{
     
     VStack{
       HStack{
-        Text("INICIA SESIÓN")
-          .fontWeight(.bold)
-          .foregroundColor(Color.white)
         
-        Text("REGÍSTRATE")
-          .foregroundColor(Color("WhiteAccent"))
+        Spacer()
+        
+        Button {
+          isViewLoginActive = true
+        } label: {
+          Text("INICIA SESIÓN")
+            .fontWeight(isViewLoginActive ? .bold : .regular)
+            .foregroundColor(isViewLoginActive ? Color("White") : Color("WhiteAccent"))
           
-          
+        }
+        
+        Spacer()
+        
+        Button {
+          isViewLoginActive = false
+        } label: {
+          Text("REGÍSTRATE")
+            .fontWeight(isViewLoginActive ? .regular : .bold)
+            .foregroundColor(isViewLoginActive ? Color("WhiteAccent") : Color("White"))
+        }
+        
+        Spacer()
+
+        
+      }
+      
+      Spacer(minLength: 42)
+      
+      if isViewLoginActive == true {
+        viewLogin()
+      }else{
+        viewRegister()
       }
       
     }
     
   }
   
+}
+
+struct viewLogin: View{
+  var body: some View{
+    Text("Login")
+  }
+}
+
+struct viewRegister: View{
+  var body: some View{
+    Text("Register")
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {

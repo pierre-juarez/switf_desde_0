@@ -8,30 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
+  var body: some View {
+    
+    ZStack{
       
-      ZStack{
+      Spacer()
+      
+      Color("BackgroundColor")
+        .ignoresSafeArea()
+      
+      VStack{
         
-        Spacer()
+        Image("LogoGameStream")
+          .resizable()
+          .aspectRatio(contentMode: .fit)
+          .frame(width:187)
+          .padding(.bottom,50)
         
-        Color("BackgroundColor")
-          .ignoresSafeArea()
-        
-        VStack{
-          
-          Image("LogoGameStream")
-            .resizable()
-            .aspectRatio(contentMode: .fit)
-            .frame(width:187)
-            .padding(.bottom,50)
-          
-          LoginRegister()
-         
-        }
+        LoginRegister()
         
       }
       
     }
+    
+  }
 }
 
 struct LoginRegister: View{
@@ -63,7 +63,7 @@ struct LoginRegister: View{
         }
         
         Spacer()
-
+        
         
       }
       
@@ -115,7 +115,7 @@ struct viewLogin: View{
           .padding(.bottom)
         
         Text("Contraseña")
-          .foregroundColor(Color("PrimaryColor"))
+          .foregroundColor(Color("White"))
         
         ZStack(alignment: .leading){
           
@@ -138,12 +138,79 @@ struct viewLogin: View{
           .background(Color("PrimaryColor"))
           .padding(.bottom)
         
+        Text("¿Olvidaste tu contraseña?")
+          .font(.footnote)
+          .frame(width: 340, alignment: .trailing)
+          .foregroundColor(Color("PrimaryColor"))
+          .padding(.bottom)
+        
+        Button(action: login, label: {
+          Text("INICIAR SESIÓN")
+            .fontWeight(.bold)
+            .foregroundColor(Color("White"))
+            .frame(maxWidth: .infinity,alignment: .center)
+            .padding(EdgeInsets(top: 11, leading: 18, bottom: 11, trailing: 18))
+            .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color("PrimaryColor"),lineWidth: 1).shadow(color: Color("White"), radius: 6))
+            .padding(.bottom)
+        })
+        
+        Text("Inicia sesión con redes sociales")
+          .foregroundColor(Color("White"))
+          .fontWeight(.thin)
+          .frame(width: 340, alignment: .center)
+          .padding(EdgeInsets(top: 50, leading: 0, bottom: 15, trailing: 0))
+        
+        HStack{
+          
+          Button(action: {print("Iniciando con Facebook...")}, label: {
+            btnFacebook()
+          })
+          
+          
+          Button(action: {print("Iniciando con Twitter...")}, label: {
+            btnTwitter()
+          })
+          
+          
+        }.frame(width:340,alignment: .center)
+        
+        
       }
       
+    }.padding(.horizontal,77)
+    
+  }
+}
+
+struct btnFacebook: View{
+  var body: some View{
+    ZStack{
       
-    }.padding(.horizontal,30)
-    
-    
+      RoundedRectangle(cornerRadius: 10)
+        .fill(Color("ButtonNetworksColor"))
+        .frame(maxWidth: .infinity, minHeight: 40, alignment: .center)
+      
+      Text("Facebook")
+        .fontWeight(.bold)
+        .foregroundColor(Color("White"))
+      
+    }
+  }
+}
+
+struct btnTwitter: View{
+  var body: some View{
+    ZStack{
+      
+      RoundedRectangle(cornerRadius: 10)
+        .fill(Color("ButtonNetworksColor"))
+        .frame(maxWidth: .infinity, minHeight: 40, alignment: .center)
+      
+      Text("Twitter")
+        .fontWeight(.bold)
+        .foregroundColor(Color("White"))
+      
+    }
   }
 }
 
@@ -153,9 +220,13 @@ struct viewRegister: View{
   }
 }
 
+func login(){
+  print("Iniciando sesión...")
+}
+
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-        Image("LogIn")
-    }
+  static var previews: some View {
+    ContentView()
+    Image("LogIn")
+  }
 }

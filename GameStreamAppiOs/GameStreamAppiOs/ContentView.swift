@@ -82,8 +82,68 @@ struct LoginRegister: View{
 }
 
 struct viewLogin: View{
+  @State var email: String = ""
+  @State var contraseña: String = ""
+  
   var body: some View{
-    Text("Login")
+    
+    ScrollView{
+      
+      VStack (alignment:.leading){
+        
+        Text("Correo electrónico")
+          .foregroundColor(Color("PrimaryColor"))
+        
+        ZStack(alignment: .leading){
+          
+          if email.isEmpty{
+            Text(verbatim: "ejemplo@gmail.com")
+              .font(.caption)
+              .foregroundColor(Color("WhiteAccent"))
+          }
+          
+          
+          TextField("", text: $email)
+            .font(.caption)
+            .foregroundColor(Color("White"))
+          
+        }
+        
+        Divider()
+          .frame(height:1)
+          .background(Color("PrimaryColor"))
+          .padding(.bottom)
+        
+        Text("Contraseña")
+          .foregroundColor(Color("PrimaryColor"))
+        
+        ZStack(alignment: .leading){
+          
+          if contraseña.isEmpty{
+            Text(verbatim: "*******")
+              .font(.caption)
+              .foregroundColor(Color("WhiteAccent"))
+          }
+          
+          
+          SecureField("", text: $contraseña)
+            .font(.caption)
+            .foregroundColor(Color("White"))
+          
+        }
+        
+        
+        Divider()
+          .frame(height:1)
+          .background(Color("PrimaryColor"))
+          .padding(.bottom)
+        
+      }
+      
+      
+    }.padding(.horizontal,30)
+    
+    
   }
 }
 

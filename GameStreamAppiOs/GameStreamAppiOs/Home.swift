@@ -55,6 +55,7 @@ struct Home: View {
 }
 
 struct ScreenHone:View{
+  @State var textSearch = ""
   var body: some View{
     
     ZStack{
@@ -62,7 +63,34 @@ struct ScreenHone:View{
       Color("BackgroundColor").ignoresSafeArea()
       
       VStack{
-        Text("Homecito")
+        Image("LogoGameStream")
+          .resizable()
+          .aspectRatio(contentMode: .fit)
+          .frame(width:187)
+          .padding(.horizontal,11)
+        
+        HStack{
+          
+          Button(action: searchVideo, label: {
+            Image(systemName: "magnifyingglass")
+              .foregroundColor(textSearch.isEmpty ? Color(.yellow) : Color("PrimaryColor"))
+          })
+          
+          ZStack(alignment: .leading){
+            if textSearch.isEmpty{
+              Text("Busca un vídeo")
+                .foregroundColor(Color(red: 174/255, green: 177/255, blue: 185/255, opacity: 1.0))
+            }
+            
+            TextField("", text: $textSearch)
+              .foregroundColor(Color("White"))
+            
+          }
+          
+        }
+        .padding([.leading,.top,.bottom],11.0)
+        .background(Color("ButtonNetworksColor"))
+        .clipShape(Capsule())
           
       }.padding(.horizontal,18)
       
@@ -70,6 +98,11 @@ struct ScreenHone:View{
       .navigationBarBackButtonHidden(true)
     
   }
+  
+  func searchVideo(){
+    print("Searching video...\(textSearch)")
+  }
+  
 }
 
 struct Home_Previews: PreviewProvider {

@@ -10,25 +10,27 @@ import SwiftUI
 struct ContentView: View {
   var body: some View {
     
-    ZStack{
-      
-      Spacer()
-      
-      Color("BackgroundColor")
-        .ignoresSafeArea()
-      
-      VStack{
+    NavigationView{
+      ZStack{
         
-        Image("LogoGameStream")
-          .resizable()
-          .aspectRatio(contentMode: .fit)
-          .frame(width:187)
-          .padding(.bottom,50)
+        Spacer()
         
-        LoginRegister()
+        Color("BackgroundColor")
+          .ignoresSafeArea()
         
-      }
-      
+        VStack{
+          
+          Image("LogoGameStream")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .frame(width:187)
+            .padding(.bottom,50)
+          
+          LoginRegister()
+          
+        }
+        
+      }.navigationBarHidden(true)
     }
     
   }
@@ -83,6 +85,7 @@ struct LoginRegister: View{
 struct viewLogin: View{
   @State var email: String = ""
   @State var contraseña: String = ""
+  @State var isHomeActive = false
   
   var body: some View{
     
@@ -175,9 +178,19 @@ struct viewLogin: View{
         
       }
       
+      NavigationLink(destination: Home(), isActive: $isHomeActive, label: {
+        EmptyView()
+      })
+      
     }.padding(.horizontal,77)
     
   }
+  
+  func login(){
+    print("Iniciando sesión...")
+    isHomeActive = true
+  }
+  
 }
 
 struct btnFacebook: View{
@@ -359,10 +372,6 @@ struct viewRegister: View{
     }.padding(.horizontal,77)
     
   }
-}
-
-func login(){
-  print("Iniciando sesión...")
 }
 
 func registerUser(){
